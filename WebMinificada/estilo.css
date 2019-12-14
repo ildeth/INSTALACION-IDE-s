@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-image: url('imagenes/tile11.jpg');
+    background-repeat: repeat;
+}
+
+#wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#foto1 {
+    display: inline-block;
+    margin: auto;
+}
+
+#texto {
+    height: auto;
+    background-color: rgba(121, 215, 247, 0.4);
+    width: 35vw;
+    margin: 1vw;
+    padding: 1vw;
+    border-radius: 2vw;
+}
+
+#contacto {
+    margin: 0 auto;
+}
+
+#contenido {
+    margin: 0px auto;
+}
+
+#derecha {
+    align-content: center;
+}
+
+.fa-facebook {
+    color: rgb(255, 255, 255);
+}
+
+
+/* Color azul cuando se pone el puntero encima de los iconos de facebook e instagram */
+
+.fa-facebook:hover {
+    color: rgb(171, 193, 205);
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-instagram:hover {
+    color: rgb(171, 193, 205);
+}
+
+header {
+    background: white;
+    height: 15vw;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-top: solid;
+    margin-top: 3%;
+    /* position: relative; */
+}
+
+header img {
+    float: right;
+    width: 20%;
+    padding: 1vw;
+    margin: auto;
+}
+
+header p {
+    position: relative;
+    top: 4vw;
+    left: 2vw;
+    color: black;
+    font-size: 5.6vw;
+    display: inline;
+    /* border-left: 1vw solid red; */
+    /* border-top: solid;
+    border-color: rgba(121, 215, 247, 0.692); */
+    /* border-width: 5px; */
+}
+
+
+/* los dos iconos de menu hamburguesa, inicialmente ocultos */
+
+header i.fas {
+    color: white;
+    background-color: black;
+    font-size: 3vw;
+    position: relative;
+    top: 10vw;
+    left: -12vw;
+    display: none;
+}
+
+nav,
+footer {
+    /* position: relative; */
+    background: black;
+    border-style: solid;
+}
+
+nav ul {
+    padding: 1vw 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 2vw 4vw;
+}
+
+nav ul li a:hover {
+    color: rgb(124, 124, 124);
+}
+
+section {
+    position: relative;
+    background-color: white;
+    padding: 2vw;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    font-size: 2vw;
+}
+
+section p,
+section h3 {
+    margin: 1vw;
+}
+
+section h3 {
+    text-align: center;
+    color: rgb(171, 193, 205);
+}
+
+section p {
+    color: black;
+    text-align: justify;
+    text-indent: 3vw;
+}
+
+footer {
+    border-style: hidden;
+    background-color: black;
+    color: white;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    padding-right: 5%;
+}
+
+table td {
+    width: 25vw;
+    height: 10vw;
+    border: none;
+}
+
+
+/* si la pantalla de visualización está por debajo de 400px de ancho */
+
+@media only screen and (max-width:600px) {
+    header i.fa-bars {
+        display: inline;
+    }
+    header i.fa-window-close {
+        display: none;
+    }
+    nav {
+        display: none;
+    }
+    nav ul {
+        padding: 0;
+    }
+    /* la barra se muestra en bloque (vertical) en forma de botones y el tamaño de
+           la letra se agranda para que sea legible */
+    nav ul li {
+        display: block;
+        text-align: center;
+        border: 1px solid black;
+    }
+    nav ul li a {
+        font-size: 3.5vw;
+    }
+    section {
+        font-size: 3.5vw;
+    }
+    footer {
+        font-size: 2vw;
+    }
+    /* table {
+        width: 100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight: bold;
+        font-size: 1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align: center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align: center;
+    } */
+}
